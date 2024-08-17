@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d0f0c0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.team {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.Scoreboard div {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .Scoreboard div {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .team {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .Scoreboard div {
+    font-size: 0.9em;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+}

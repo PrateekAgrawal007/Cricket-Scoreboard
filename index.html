@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Scoreboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="score.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- team A -->
+      <div class="team" id="teamA">
+        <h1>teamA</h1>
+        <div class="Scoreboard">
+          <div>balls: <span id="teamA_balls">0</span></div>
+          <div>overs: <span id="teamA_overs">0</span></div>
+          <div>wickets: <span id="teamA_wickets">0</span></div>
+          <div>runs: <span id="teamA_runs">0</span></div>
+        </div>
+        <div class="buttons">
+          <button onclick="f1()">Run</button>
+          <button onclick="f2()">Four</button>
+          <button onclick="f3()">Six</button>
+          <button onclick="f4()">wickets</button>
+        </div>
+      </div>
+      <!-- team B -->
+      <div class="team" id="teamB">
+        <h1>teamB</h1>
+        <div class="Scoreboard">
+          <div>balls: <span id="teamB_balls">0</span></div>
+          <div>overs: <span id="teamB_overs">0</span></div>
+          <div>wickets: <span id="teamB_wickets">0</span></div>
+          <div>runs: <span id="teamB_runs">0</span></div>
+        </div>
+        <div class="buttons">
+          <button onclick="f5()">Run</button>
+          <button onclick="f6()">Four</button>
+          <button onclick="f7()">Six</button>
+          <button onclick="f8()">wickets</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
